@@ -1,9 +1,3 @@
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=FF0000&center=true&vCenter=true&width=900&lines=Zero-Day+Legacy;Boot-to-Root+CTF+Lab+Machine;Royal+Health+Hospital+%E2%80%94+Hack+the+System;Graduation+Project+%7C+Grade%3A+97%25+%F0%9F%8F%86" alt="Typing SVG" />
-
---
-
 ### 🗺️ Attack Chain — 17 Steps
 
 | # | Phase | Action | Tool | Outcome |
