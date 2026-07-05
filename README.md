@@ -54,44 +54,6 @@ sudo netdiscover
 
 ---
 
-## 🏥 The Target — Royal Health Hospital
-
-A fully functional bilingual (Arabic/English) hospital management system with three user roles and a complete attack surface.
-
-### Homepage
-
-![Hospital Homepage](photos/01_hospital_homepage.png)
-
-### Login page
-
-![Login page](photos/02_patient_portal.png)
-
-### Patient Portal
-
-![Patient Portal](photos/02_patient_portal.png)
-
-### Nurse Dashboard
-
-![Nurse Dashboard](photos/03_nurse_dashboard.png)
-
-### Admin Dashboard
-
-![Admin Dashboard](photos/04_admin_dashboard.png)
-
-### Admin Invoices
-
-![Admin Invoices](photos/05_admin_invoices.png)
-
-### Chat page
-
-![Chat page](photos/09_admin_backup.png)
-
-### Backup Page
-
-![Backup Page](photos/09_admin_backup.png)
-
----
-
 ## 🎯 Attack Scenario
 
 > *A patient at Royal Health Hospital receives an invoice he cannot afford.*  
@@ -179,6 +141,48 @@ Bilingual:   Arabic + English on all pages
 
 ---
 
+## 🏥 The Target — Royal Health Hospital
+
+A fully functional bilingual (Arabic/English) hospital management system with three user roles and a complete attack surface.
+
+### Homepage - EN
+
+![Hospital Homepage EN](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/hospital_homepage_EN.png)
+
+### Homepage - AR
+
+![Hospital Homepage AR](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/hospital_homepage_AR.png)
+
+### Login page
+
+![Login page](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/Login_page.png)
+
+### Patient Portal
+
+![Patient Portal](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/patient_portal.png)
+
+### Nurse Dashboard
+
+![Nurse Dashboard](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/nurse_dashboard.png)
+
+### Admin Dashboard
+
+![Admin Dashboard](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/admin_dashboard.png)
+
+### Admin Invoices
+
+![Admin Invoices](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/admin_invoices.png)
+
+### Admin Chat
+
+![Chat page](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/admin_chat.png)
+
+### Admin Backup
+
+![Admin Backup](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/photos/admin_backup.png)
+
+---
+
 ## ⚖️ Ethical & Legal Disclaimer
 
 > This project was developed **exclusively for academic and educational purposes** at Ajloun National University.
@@ -188,12 +192,3 @@ Bilingual:   Arabic + English on all pages
 - **NEVER deploy on a public internet-facing server**
 - All patient data is **fictional and generated for the CTF**
 - By using this machine, you agree to use it only in **authorized, controlled environments for educational purposes**
-
----
-
-<div align="center">
-
-*Built with ❤️ by the Zero-Day Legacy Team — ANU 2025–2026*  
-*⭐ Star this repo if it helped you learn something new!*
-
-</div>
