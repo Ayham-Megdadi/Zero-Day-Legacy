@@ -16,12 +16,6 @@ Thank you for your interest in Zero-Day Legacy!
 - Changes that break the 17-step attack chain
 - Any code that introduces real malware or harmful exploits
 
-## How to Contribute
-
-1. Fork the repository
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Make your changes and test the full attack chain still works
-4. Open a Pull Request with a clear description
 
 ## Code Style
 
