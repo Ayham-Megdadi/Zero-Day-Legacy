@@ -6,7 +6,7 @@
 
 ![CTF](https://img.shields.io/badge/Type-Boot--to--Root%20CTF-red?style=for-the-badge&logo=hackthebox&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-VirtualBox-blue?style=for-the-badge&logo=virtualbox&logoColor=white)
-![OS](https://img.shields.io/badge/OS-Ubuntu-Server%2020.04%20LTS-orange?style=for-the-badge&logo=ubuntu&logoColor=white)
+![OS](https://img.shields.io/badge/OS-Ubuntu%2020.04%20LTS-orange?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Stack](https://img.shields.io/badge/Stack-Apache%20%2B%20PHP%20%2B%20MySQL-4F5D95?style=for-the-badge&logo=php&logoColor=white)
 ![Grade](https://img.shields.io/badge/Grade-97%25%20%F0%9F%8F%86-FFD700?style=for-the-badge)
 ![Bilingual](https://img.shields.io/badge/Bilingual-Arabic%20%2F%20English-teal?style=for-the-badge)
@@ -38,6 +38,8 @@ The attacker plays the role of a **patient who cannot afford a hospital bill** a
 <div align="center">
 
 [![Download VM](https://img.shields.io/badge/⬇️%20Download%20VM%20(.ova)%20—%20Google%20Drive-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1l3ycTob6W0LsjWuNfo0qi7RwDJh32q8J/view?usp=sharing)
+
+</div>
 
 ### Setup in 3 Steps
 
