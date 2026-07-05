@@ -43,14 +43,10 @@ The attacker plays the role of a **patient who cannot afford a hospital bill** a
 
 ```bash
 # 1. Import into VirtualBox
-```
 File → Import Appliance → select the .ova file
 # 2. Set Network Adapter
-```
 Settings → Network → Adapter 1 → Bridged Adapter
-```
 # 3. Discover the machine IP from Kali Linux
-```
 sudo netdiscover
 ```
 
@@ -64,44 +60,33 @@ A fully functional bilingual (Arabic/English) hospital management system with th
 
 ![Hospital Homepage](photos/01_hospital_homepage.png)
 
-### Patient Portal — The Starting Point
+### Login page
 
-![Patient Portal](photos/03_patient_portal.png)
-*The attacker logs in as patient **Cyber** and finds an unpaid invoice of $300,000 — the motivation begins.*
+![Login page](photos/02_patient_portal.png)
+
+### Patient Portal
+
+![Patient Portal](photos/02_patient_portal.png)
 
 ### Nurse Dashboard
 
-![Nurse Dashboard](photos/04_nurse_dashboard.png)
-*Accessed via SQL Injection — full patient management, messaging, and scheduling.*
+![Nurse Dashboard](photos/03_nurse_dashboard.png)
 
-### Admin Control Panel
+### Admin Dashboard
 
-![Admin Dashboard](photos/05_admin_dashboard.png)
-*Accessed via XSS → Session Hijacking — full control over invoices, nurses, patients, and backups.*
+![Admin Dashboard](photos/04_admin_dashboard.png)
 
 ### Admin Invoices
 
-![Admin Invoices](photos/06_admin_invoices.png)
-*Invoice management with no CSRF protection — deletion via a simple GET request.*
+![Admin Invoices](photos/05_admin_invoices.png)
 
-### Backup Page — Credential Exposure
+### Chat page
+
+![Chat page](photos/09_admin_backup.png)
+
+### Backup Page
 
 ![Backup Page](photos/09_admin_backup.png)
-*SSH credentials exposed in plaintext — a key pivot point in the attack chain.*
-
-### Arabic Interface (RTL Support)
-
-![Arabic UI](photos/02_hospital_homepage_ar.png)
-*Full Arabic interface with RTL layout — all pages support both languages.*
-
-### CTF Flag — Mission Complete
-
-![CTF Flag](photos/15_ctf_flag.png)
-*The final message after deleting `invoices_backup.sql` and achieving full root access.*
-
----
-
-> 📄 **Full attack chain with all technical screenshots is documented in the Pentest Report → [`/docs/`](./docs/)**
 
 ---
 
@@ -111,52 +96,13 @@ A fully functional bilingual (Arabic/English) hospital management system with th
 > *He's connected to the hospital's internal network and decides to hack the system.*  
 > *From there — the clock is ticking.*
 
-### 🗺️ Attack Chain — 17 Steps
-
-| # | Phase | Action | Tool | Outcome |
-|---|-------|--------|------|---------|
-| 1 | Recon | Network Discovery | `netdiscover` | Hospital VM IP found |
-| 2 | Recon | Port Scan | `nmap -sV` | Port 80 + Port 22 open |
-| 3 | Recon | Web Enumeration | `dirb` | `robots.txt` reveals admin paths |
-| 4 | Recon | Login as Patient | Browser | Unpaid invoice → attack motivation |
-| 5 | Exploit | SQL Injection | `' OR role='nurse' --` | Login as nurse **Amira** |
-| 6 | Exploit | Stored XSS | JS payload via messages | XSS stored in database |
-| 7 | Exploit | XSS Execution | Admin **AIMAS** opens messages | XSS fires in admin's browser |
-| 8 | Exploit | Cookie Theft | `nc -lvnp 4444` | Admin session cookie captured |
-| 9 | Exploit | Session Hijacking | Replace cookie in browser | Full admin access without password |
-| 10 | Exploit | Delete Invoice | GET request (no CSRF) | Invoice deleted from DB |
-| 11 | Pivot | Credential Exposure | `admin_backup.php` | `Ayham / Ibrahim@997` |
-| 12 | Pivot | SSH Login | `ssh Ayham@<IP>` | Low-privilege shell |
-| 13 | Pivot | Find Hash File | `/home/Ayham/crack-Manar-hash.txt` | MD5 hash of **Manar**'s password |
-| 14 | Exploit | Crack the Hash | `hashcat` / CrackStation | Plaintext: `Salsbeel@2004` |
-| 15 | Pivot | Switch User | `su - Manar` | Shell as **Manar** |
-| 16 | PrivEsc | Privilege Escalation | CVE-2021-3493 (EDB-49655) | `root` shell — `uid=0` |
-| 17 | Goal | Delete Target File | `rm /var/backups/hospital/invoices_backup.sql` | **🚩 CTF SOLVED** |
-
----
-
-## 🔓 Vulnerability Specifications
-
-| # | Vulnerability | Location | CWE / CVE | Severity |
-|---|--------------|----------|-----------|----------|
-| V1 | SQL Injection | `login.php` + `loginadmin.php` | CWE-89 | 🔴 Critical |
-| V2 | Stored XSS | `nurse_messages.php` → `admin_messages.php` | CWE-79 | 🔴 High |
-| V3 | Session Hijacking | Admin cookie theft via XSS | CWE-384 | 🔴 High |
-| V4 | Missing CSRF Protection | `admin_invoices.php` delete via GET | CWE-352 | 🟠 Medium |
-| V5 | Credential Exposure | `admin_backup.php` SSH creds in plaintext | CWE-312 | 🔴 High |
-| V6 | Plaintext Passwords | MySQL `users` table — no hashing | CWE-256 | 🟠 Medium |
-| V7 | Privilege Escalation | Linux kernel — Ubuntu OverlayFS | CVE-2021-3493 | 🔴 Critical |
-| V8 | Weak Hash (MD5) | `/home/Ayham/crack-Manar-hash.txt` | CWE-328 | 🟠 Medium |
-
-> All vulnerabilities are **intentional and serve a specific educational purpose** in the CTF attack chain.
-
 ---
 
 ## 🛠️ Technology Stack
 
 | Layer | Technology | Version |
 |-------|-----------|---------|
-| OS | Ubuntu LTS (Focal Fossa) | 20.04.5 |
+| OS | Ubuntu Server LTS (Focal Fossa) | 20.04.6 |
 | Web Server | Apache | 2.4.x |
 | Language | PHP (no frameworks — intentional) | 7.4 |
 | Database | MySQL | 8.0.x |
@@ -171,7 +117,7 @@ A fully functional bilingual (Arabic/English) hospital management system with th
 ## 🖥️ VM Specifications
 
 ```
-OS:          Ubuntu 20.04.5 LTS — kernel 5.4.x (vulnerable to CVE-2021-3493)
+OS:          Ubuntu Server 20.04.6 LTS — kernel 5.4.x (vulnerable to CVE-2021-3493)
 vCPU:        1
 RAM:         1 GB
 Storage:     2 GB
