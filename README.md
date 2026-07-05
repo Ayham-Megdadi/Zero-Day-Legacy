@@ -16,7 +16,7 @@
 <br/>
 
 > 🎓 **Graduation Project — Ajloun National University (ANU)**  
-> Faculty of IT · Cybersecurity and Cloud Computing · Academic Year 2025–2026  
+> Faculty of IT · Cybersecurity and Cloud Computing · Academic Year 2026  
 > **🏆 Highest Grade in the University: 97%**
 
 </div>
@@ -39,22 +39,20 @@ The attacker plays the role of a **patient who cannot afford a hospital bill** a
 
 [![Download VM](https://img.shields.io/badge/⬇️%20Download%20VM%20(.ova)%20—%20Google%20Drive-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1l3ycTob6W0LsjWuNfo0qi7RwDJh32q8J/view?usp=sharing)
 
-</div>
-
 ### Setup in 3 Steps
 
 ```bash
 # 1. Import into VirtualBox
+```
 File → Import Appliance → select the .ova file
-
 # 2. Set Network Adapter
+```
 Settings → Network → Adapter 1 → Bridged Adapter
-
+```
 # 3. Discover the machine IP from Kali Linux
+```
 sudo netdiscover
 ```
-
-Open `http://<machine-IP>` in your browser and begin your attack.
 
 ---
 
