@@ -73,7 +73,6 @@ sudo netdiscover
 | Frontend | HTML / CSS / JS — custom, no Bootstrap | — |
 | VM Platform | VirtualBox | — |
 | Network Mode | Bridged Adapter (real LAN IP) | — |
-| Auto-Reset | Cron job every 90 minutes | — |
 | Bilingual | Full Arabic + English with RTL | — |
 
 ---
@@ -87,7 +86,6 @@ RAM:         1 GB
 Storage:     2 GB
 Network:     Bridged Adapter — gets real IP from local router
 Services:    Apache (80) · OpenSSH (22) · MySQL (3306 — local only)
-Auto-Reset:  Every 90 minutes — restores DB + target file automatically
 Bilingual:   Arabic + English on all pages
 ```
 
@@ -106,13 +104,13 @@ Bilingual:   Arabic + English on all pages
 
 <div align="center">
 
-| Name | LinkedIn |
-|------|----------|
-| **Ayham Megdadi** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/ayham-megdadi) |
-| **Ibrahim Onizat** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/ibrahim-onizat) |
-| **Manar Hussein** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/manar-hussein) |
-| **Amira Freihat** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/amira-freihat) |
-| **Salsabeel Abu Hawwa** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/salsabeel-abu-hawwa) |
+| Name | LinkedIn | Instagram |
+|------|----------|-----------|
+| **Ayham Megdadi** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayham-megdadi) | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/ayham_megdadi) |
+| **Ibrahim Onizat** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibrahim-alonezat-8b4025282) | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/ibr3.m) |
+| **Manar Hussein** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manar-hussein-gharaibeh-ab2125351) | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/manar_hussein04) |
+| **Amira Freihat** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amira-freihat-735b78350) | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/amira_freihat04) |
+| **Salsabeel Abu Hawwa** | — | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/slsabeel_mohammad) |
 
 **Supervisor:** Dr. Mohammad Al-Sawah  
 **University:** Ajloun National University (ANU)  
