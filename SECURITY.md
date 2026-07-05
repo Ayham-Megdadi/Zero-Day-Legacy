@@ -39,7 +39,7 @@ Please report only issues that are **not intentionally vulnerable**, such as:
 This machine must only be used in:
 
 * Isolated VirtualBox environments
-* Local networks with no Internet exposure
+* Local networks
 * Authorized educational or research environments
 
 **Never deploy this machine on a public-facing server.**
@@ -48,4 +48,10 @@ This machine must only be used in:
 
 ## Contact
 
-For questions about the project or to report non-intended issues, please open a GitHub Issue or contact the project team through Ajloun National University.
+For questions about the project or to report non-intended issues, please contact the project team. Do not open a public GitHub issue for security vulnerabilities.
+
+--
+
+## ⏱ Response Time
+
+We aim to respond to all valid security reports within 48 hours and will prioritize fixing confirmed issues as quickly as possible.
