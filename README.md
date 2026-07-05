@@ -95,8 +95,8 @@ Bilingual:   Arabic + English on all pages
 
 | Document | Description |
 |----------|-------------|
-| [`Zero-Day-Legacy-PRD-v2.docx`](./docs/Zero-Day-Legacy-PRD-v2.docx) | Full Project Requirements Document — attack chain, DB design, VM config, vulnerability specs |
-| [`Penetration-Test-Report.pdf`](./docs/Penetration-Test-Report.pdf) | Complete penetration test report by Cyber Company AIMAS — full technical findings with screenshots |
+| [`Zero-Day-Legacy-PRD.pdf`](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/Documentation/Zero-Day-Legacy-PRD.pdf) | Full Project Requirements Document — attack chain, DB design, VM config, vulnerability specs |
+| [`Penetration-Test-Report.pdf`](https://github.com/Ayham-Megdadi/Zero-Day-Legacy/blob/main/Documentation/Penetration-Test-Report.pdf) | Complete penetration test report by Cyber Company AIMAS — full technical findings with screenshots |
 
 ---
 
